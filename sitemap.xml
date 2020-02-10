@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.csiqu.club/2020/02/10/docker-mysql-exit/</loc>
+    
+    <lastmod>2020-02-10T10:09:53.790Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.csiqu.club/2019/12/03/singleton-pattern/</loc>
     
     <lastmod>2020-02-10T01:05:55.141Z</lastmod>
