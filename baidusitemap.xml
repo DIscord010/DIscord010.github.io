@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http://www.csiqu.club/2019/12/03/singleton-pattern/</loc>
+    <lastmod>2020-02-10</lastmod>
+  </url>  <url>
+    <loc>http://www.csiqu.club/2019/10/30/shell-jar-execute/</loc>
+    <lastmod>2020-02-10</lastmod>
+  </url>  <url>
+    <loc>http://www.csiqu.club/2020/01/02/dubbo-asyn-sync/</loc>
+    <lastmod>2020-01-03</lastmod>
+  </url>  <url>
+    <loc>http://www.csiqu.club/2019/11/13/mybatis-dynamic-proxy/</loc>
+    <lastmod>2019-12-02</lastmod>
+  </url>  <url>
+    <loc>http://www.csiqu.club/2019/11/14/mysql-rr/</loc>
+    <lastmod>2019-12-02</lastmod>
+  </url>  <url>
+    <loc>http://www.csiqu.club/2019/11/25/xml-mixed-content-deserialization/</loc>
+    <lastmod>2019-11-28</lastmod>
+  </url>  <url>
+    <loc>http://www.csiqu.club/2019/10/24/springboot-shiro-think/</loc>
+    <lastmod>2019-11-07</lastmod>
+  </url>  <url>
+    <loc>http://www.csiqu.club/2019/10/24/cas-5-3-x/</loc>
+    <lastmod>2019-10-24</lastmod>
+  </url>
+</urlset>
