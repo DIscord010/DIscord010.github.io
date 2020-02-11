@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://www.csiqu.club/2019/11/13/mybatis-dynamic-proxy/</loc>
+    <lastmod>2020-02-11</lastmod>
+  </url>  <url>
     <loc>http://www.csiqu.club/2020/02/10/docker-mysql-exit/</loc>
     <lastmod>2020-02-11</lastmod>
   </url>  <url>
@@ -12,9 +15,6 @@
   </url>  <url>
     <loc>http://www.csiqu.club/2020/01/02/dubbo-asyn-sync/</loc>
     <lastmod>2020-01-03</lastmod>
-  </url>  <url>
-    <loc>http://www.csiqu.club/2019/11/13/mybatis-dynamic-proxy/</loc>
-    <lastmod>2019-12-02</lastmod>
   </url>  <url>
     <loc>http://www.csiqu.club/2019/11/14/mysql-rr/</loc>
     <lastmod>2019-12-02</lastmod>
