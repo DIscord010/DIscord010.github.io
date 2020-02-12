@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.csiqu.club/2020/02/12/mysql-master-slave-replication/</loc>
+    
+    <lastmod>2020-02-12T08:00:03.868Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.csiqu.club/2019/11/13/mybatis-dynamic-proxy/</loc>
     
     <lastmod>2020-02-11T04:04:20.124Z</lastmod>
