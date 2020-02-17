@@ -6,14 +6,14 @@
 <li><p>而在SpirngBoot的应用中，引入shiro-spirng：</p>
 <p><img src="1569216898087.png" alt=""></p>
 </li>
-<li><p>本以为也要手动注册一个过滤器（DelegatingFilterProxy），却发现只需要配置ShiroConfig和ShiroRealm：（简单实现登录鉴权的功能）</p>
+<li><p>本以为也要手动注册一个过滤器（<code>DelegatingFilterProxy</code>），发现只需要编写<code>ShiroConfig</code>和<code>ShiroRealm</code>：（简单实现登录鉴权的功能）</p>
 <p><img src="1569216976783.png" alt=""></p>
 <p><img src="1569217146808.png" alt=""></p>
 </li>
-<li><p>那么Filter的配置去哪儿了？</p>
-<p>查看源码后发现，ShiroFilterFactoryBean实现了FactoryBean接口，getObject()方法返回的是一个静态内部类SpirngShiroFilter的实例对象：</p>
+<li><p>那么Filter的配置在哪？</p>
+<p>查看源码后发现，<code>ShiroFilterFactoryBean</code>实现了<code>FactoryBean</code>接口，<code>getObject()</code>方法返回的是一个静态内部类<code>SpirngShiroFilter</code>的实例对象：</p>
 <p><img src="1569217441922.png" alt=""></p>
-<p>也就是说实际上，注入容器中的bean是一个继承Filter接口的过滤器实例对象。而继承Filter接口的Bean，Spring会将其在Tomcat中注册。在Servlet 3.0以前，Filter必须在web.xml中进行配置注册，而Servlet 3.0之后，提供了无配置文件化，以及运行时注册Filter、Servlet的特性，所以我们无需手动进行过滤器的注册。</p>
+<p>也就是说实际上，注册在IoC容器中的bean是一个继承<code>Filter</code>接口的实例对象。在Servlet 3.0以前，Filter必须在web.xml中进行配置注册，而Servlet 3.0之后，提供了无配置文件化，以及运行时注册Filter、Servlet的特性，所以我们无需在web.xml配置过滤器。而继承<code>Filter</code>接口的bean，Spring会帮我们将其在Tomcat中注册。</p>
 </li>
 <li><p>有关遗失的web.xml可以查看这篇文章：</p>
 <p><a href="https://www.cnkirito.moe/servlet-explore/?utm_source=tuicool&amp;utm_medium=referral" target="_blank" rel="noopener">https://www.cnkirito.moe/servlet-explore/?utm_source=tuicool&amp;utm_medium=referral</a></p>
