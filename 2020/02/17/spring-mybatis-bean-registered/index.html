@@ -73,23 +73,22 @@
 <figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http\<span class="symbol">://www</span>.csiqu.club/schema/my.xsd=META-INF/my.xsd</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>进行测试：</p>
-<p>自定义扩展的作用就是在IoC容器中注册<code>User</code>的实例对象（忽略getter和）：</p>
+<p>自定义扩展的作用就是在IoC容器中注册<code>User</code>的实例对象（忽略getter和setter）：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">User</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> Integer age;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">beans</span> <span class="attr">xmlns</span>=<span class="string">"http://www.springframework.org/schema/beans"</span></span></span><br><span class="line"><span class="tag">       <span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></span></span><br><span class="line"><span class="tag">       <span class="attr">xmlns:my</span>=<span class="string">"http://www.csiqu.club/schema/my"</span></span></span><br><span class="line"><span class="tag">       <span class="attr">xsi:schemaLocation</span>=<span class="string">"http://www.springframework.org/schema/beans</span></span></span><br><span class="line"><span class="tag"><span class="string">	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd</span></span></span><br><span class="line"><span class="tag"><span class="string">    http://www.csiqu.club/schema/my</span></span></span><br><span class="line"><span class="tag"><span class="string">    http://www.csiqu.club/schema/my.xsd"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">my:user</span> <span class="attr">id</span>=<span class="string">"user"</span> <span class="attr">name</span>=<span class="string">"chensiqu"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">beans</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    ApplicationContext context = <span class="keyword">new</span> ClassPathXmlApplicationContext(</span><br><span class="line">            <span class="string">"/spring/handler/spring-handler.xml"</span>);</span><br><span class="line">    <span class="comment">// 配置文件的方式进行注入</span></span><br><span class="line">    User user = (User)context.getBean(<span class="string">"user"</span>);</span><br><span class="line">    System.out.println(user.getName());</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>运行结果可以发现已经成功在IoC容器中成功注册。</p>
+<p>运行结果可以发现已经成功在IoC容器中注册。</p>
 </li>
 </ol>
 <h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><p>自定义XML扩展参考官方文档 9.2节：</p>
 <p><a href="https://docs.spring.io/spring/docs/5.1.5.RELEASE/spring-framework-reference/core.html#xsd-custom-schema" target="_blank" rel="noopener">https://docs.spring.io/spring/docs/5.1.5.RELEASE/spring-framework-reference/core.html#xsd-custom-schema</a></p>
-<p>相关版本：</p>
 <table>
 <thead>
 <tr>
-<th></th>
+<th>框架</th>
 <th>版本</th>
 </tr>
 </thead>
@@ -106,7 +105,7 @@
 <td>2.0.3</td>
 </tr>
 </tbody></table>
-</div><div class="post-copyright"><blockquote><p>原文作者: chensiqu</p><p>原文链接: <a href="http://www.csiqu.club/2020/02/17/spring-mybatis-bean-registered/">http://www.csiqu.club/2020/02/17/spring-mybatis-bean-registered/</a></p><p>版权声明: 转载请注明出处(必须保留作者署名及链接)</p></blockquote></div><div class="tags"><a href="/tags/SpringBoot/">SpringBoot</a><a href="/tags/Mybatis/">Mybatis</a><a href="/tags/Spring/">Spring</a></div><div class="post-share"><div class="social-share"><span>分享到:</span></div></div><div class="post-nav"><a href="/2020/02/13/application-read-write-separation/" class="next">应用读写分离实现方案</a></div><div id="comments"><div id="container"><script type="text/javascript" src="https://unpkg.com/gitalk/dist/gitalk.min.js?v=2.0.4"></script><script type="text/javascript" src="//cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js?v=2.0.4"></script><script>var gitalk = new Gitalk({
+</div><div class="post-copyright"><blockquote><p>原文作者: chensiqu</p><p>原文链接: <a href="http://www.csiqu.club/2020/02/17/spring-mybatis-bean-registered/">http://www.csiqu.club/2020/02/17/spring-mybatis-bean-registered/</a></p><p>版权声明: 转载请注明出处(必须保留作者署名及链接)</p></blockquote></div><div class="tags"><a href="/tags/Mybatis/">Mybatis</a><a href="/tags/Spring/">Spring</a></div><div class="post-share"><div class="social-share"><span>分享到:</span></div></div><div class="post-nav"><a href="/2020/02/13/application-read-write-separation/" class="next">应用读写分离实现方案</a></div><div id="comments"><div id="container"><script type="text/javascript" src="https://unpkg.com/gitalk/dist/gitalk.min.js?v=2.0.4"></script><script type="text/javascript" src="//cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js?v=2.0.4"></script><script>var gitalk = new Gitalk({
   clientID: '6ad4a49d58d5ae28fd30',
   clientSecret: '5428028452c90cc4b45c91095fbfd881bfd81fef',
   repo: 'discord010.github.io',
