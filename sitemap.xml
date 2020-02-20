@@ -2,16 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://www.csiqu.club/2020/02/17/spring-mybatis-bean-registered/</loc>
+    <loc>http://www.csiqu.club/2019/11/14/mysql-rr/</loc>
     
-    <lastmod>2020-02-20T02:39:30.151Z</lastmod>
+    <lastmod>2020-02-20T09:28:44.297Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.csiqu.club/2020/01/02/dubbo-asyn-sync/</loc>
+    
+    <lastmod>2020-02-20T09:28:36.058Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.csiqu.club/2019/11/13/mybatis-dynamic-proxy/</loc>
+    
+    <lastmod>2020-02-20T09:28:28.911Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.csiqu.club/2019/10/24/springboot-shiro-think/</loc>
     
-    <lastmod>2020-02-17T02:52:42.688Z</lastmod>
+    <lastmod>2020-02-20T09:26:53.435Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.csiqu.club/2019/10/24/cas-5-3-x/</loc>
+    
+    <lastmod>2020-02-20T09:25:53.881Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.csiqu.club/2020/02/13/application-read-write-separation/</loc>
+    
+    <lastmod>2020-02-20T07:52:01.239Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.csiqu.club/2020/02/17/spring-mybatis-bean-registered/</loc>
+    
+    <lastmod>2020-02-20T02:39:30.151Z</lastmod>
     
   </url>
   
@@ -23,23 +58,9 @@
   </url>
   
   <url>
-    <loc>http://www.csiqu.club/2020/02/13/application-read-write-separation/</loc>
-    
-    <lastmod>2020-02-14T02:15:31.508Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.csiqu.club/2020/02/12/mysql-master-slave-replication/</loc>
     
     <lastmod>2020-02-13T07:12:48.565Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.csiqu.club/2019/11/13/mybatis-dynamic-proxy/</loc>
-    
-    <lastmod>2020-02-11T04:04:20.124Z</lastmod>
     
   </url>
   
@@ -54,20 +75,6 @@
     <loc>http://www.csiqu.club/2019/10/30/shell-jar-execute/</loc>
     
     <lastmod>2020-02-10T01:05:32.054Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.csiqu.club/2020/01/02/dubbo-asyn-sync/</loc>
-    
-    <lastmod>2020-01-03T01:18:01.931Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.csiqu.club/2019/11/14/mysql-rr/</loc>
-    
-    <lastmod>2019-12-02T08:40:58.193Z</lastmod>
     
   </url>
   
@@ -103,13 +110,6 @@
     <loc>http://www.csiqu.club/about/index.html</loc>
     
     <lastmod>2019-10-25T04:31:32.912Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.csiqu.club/2019/10/24/cas-5-3-x/</loc>
-    
-    <lastmod>2019-10-24T07:17:35.406Z</lastmod>
     
   </url>
   
