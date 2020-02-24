@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://www.csiqu.club/2020/02/13/application-read-write-separation/</loc>
+    <lastmod>2020-02-24</lastmod>
+  </url>  <url>
+    <loc>http://www.csiqu.club/2020/02/12/mysql-master-slave-replication/</loc>
+    <lastmod>2020-02-24</lastmod>
+  </url>  <url>
     <loc>http://www.csiqu.club/2020/02/17/spring-mybatis-bean-registered/</loc>
     <lastmod>2020-02-21</lastmod>
   </url>  <url>
@@ -19,14 +25,8 @@
     <loc>http://www.csiqu.club/2019/10/24/cas-5-3-x/</loc>
     <lastmod>2020-02-20</lastmod>
   </url>  <url>
-    <loc>http://www.csiqu.club/2020/02/13/application-read-write-separation/</loc>
-    <lastmod>2020-02-20</lastmod>
-  </url>  <url>
     <loc>http://www.csiqu.club/2020/02/10/docker-mysql-exit/</loc>
     <lastmod>2020-02-17</lastmod>
-  </url>  <url>
-    <loc>http://www.csiqu.club/2020/02/12/mysql-master-slave-replication/</loc>
-    <lastmod>2020-02-13</lastmod>
   </url>  <url>
     <loc>http://www.csiqu.club/2019/12/03/singleton-pattern/</loc>
     <lastmod>2020-02-10</lastmod>

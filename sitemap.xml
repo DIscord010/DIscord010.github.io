@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.csiqu.club/2020/02/13/application-read-write-separation/</loc>
+    
+    <lastmod>2020-02-24T08:25:24.273Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.csiqu.club/2020/02/12/mysql-master-slave-replication/</loc>
+    
+    <lastmod>2020-02-24T06:31:54.093Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.csiqu.club/2020/02/17/spring-mybatis-bean-registered/</loc>
     
-    <lastmod>2020-02-21T01:10:36.203Z</lastmod>
+    <lastmod>2020-02-21T03:09:45.367Z</lastmod>
     
   </url>
   
@@ -44,23 +58,9 @@
   </url>
   
   <url>
-    <loc>http://www.csiqu.club/2020/02/13/application-read-write-separation/</loc>
-    
-    <lastmod>2020-02-20T07:52:01.239Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.csiqu.club/2020/02/10/docker-mysql-exit/</loc>
     
     <lastmod>2020-02-17T02:40:21.188Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.csiqu.club/2020/02/12/mysql-master-slave-replication/</loc>
-    
-    <lastmod>2020-02-13T07:12:48.565Z</lastmod>
     
   </url>
   
