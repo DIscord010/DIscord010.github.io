@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://www.csiqu.club/2019/11/13/mybatis-dynamic-proxy/</loc>
+    <lastmod>2020-02-25</lastmod>
+  </url>  <url>
     <loc>http://www.csiqu.club/2020/02/13/application-read-write-separation/</loc>
     <lastmod>2020-02-25</lastmod>
   </url>  <url>
@@ -14,9 +17,6 @@
     <lastmod>2020-02-20</lastmod>
   </url>  <url>
     <loc>http://www.csiqu.club/2020/01/02/dubbo-asyn-sync/</loc>
-    <lastmod>2020-02-20</lastmod>
-  </url>  <url>
-    <loc>http://www.csiqu.club/2019/11/13/mybatis-dynamic-proxy/</loc>
     <lastmod>2020-02-20</lastmod>
   </url>  <url>
     <loc>http://www.csiqu.club/2019/10/24/springboot-shiro-think/</loc>

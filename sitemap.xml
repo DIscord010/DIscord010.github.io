@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.csiqu.club/2019/11/13/mybatis-dynamic-proxy/</loc>
+    
+    <lastmod>2020-02-25T03:18:17.614Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.csiqu.club/2020/02/13/application-read-write-separation/</loc>
     
     <lastmod>2020-02-25T03:08:42.328Z</lastmod>
@@ -33,13 +40,6 @@
     <loc>http://www.csiqu.club/2020/01/02/dubbo-asyn-sync/</loc>
     
     <lastmod>2020-02-20T09:28:36.058Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.csiqu.club/2019/11/13/mybatis-dynamic-proxy/</loc>
-    
-    <lastmod>2020-02-20T09:28:28.911Z</lastmod>
     
   </url>
   
