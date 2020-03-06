@@ -1,5 +1,5 @@
 ---
-title: Dubbo异步转同步原理
+title: Dubbo异步转同步实现方式
 date: 2020-01-02 17:20:23
 tags: [Dubbo]
 categories: 后端开发

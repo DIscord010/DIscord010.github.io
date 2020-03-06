@@ -1,5 +1,5 @@
 ---
-title: Mybatis代理实现执行流程
+title: Mybatis代理方法执行流程
 date: 2019-11-13 09:09:42
 tags: [Mybatis]
 categories: 后端开发

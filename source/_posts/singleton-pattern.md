@@ -35,7 +35,7 @@ public class Singleton1 {
 }
 ```
 
-由于`getInstance()`方法没有加锁，在多线程中会出现多个线程都命中判断条件`instance == null`，导致new多个实例对象。
+由于`getInstance()`方法没有加锁，在多线程中会出现多个线程都命中判断条件`instance == null`，导致创建多个实例对象。
 
 ## 线程安全懒汉式
 
