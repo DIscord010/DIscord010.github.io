@@ -103,7 +103,7 @@ public class Singleton4 {
 
 使用`volatile`关键字禁止指令重排，防止空指针异常：
 
-`@code instance = new Singleton4()`这一行代码实际上是由三步操作（多条指令。线程切换可能发生在任意指令之后）完成：
+`instance = new Singleton4()`这一行代码实际上是由三步操作（多条指令。线程切换可能发生在任意指令之后）完成：
 
 1. 分配内存空间
 2. 初始化对象

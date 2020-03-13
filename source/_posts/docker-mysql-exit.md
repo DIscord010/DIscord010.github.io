@@ -53,7 +53,7 @@ dmesg | grep mysql
 
 找到了原因之后，需要进行解决。最简单的方法就是加大机器的内存。
 
-在这里我选择调整MySQL的配置文件，降低MySQL的内存占用来防止MySQL进程再被"Out Of Memory killer"杀掉。先重启容器，查看在调整前的MySQL内存占用和配置参数：
+在这里我选择调整MySQL的配置文件，降低MySQL的内存占用来防止MySQL进程再被“Out Of Memory killer“杀掉。先重启容器，查看在调整前的MySQL内存占用和配置参数：
 
 ```java
 [root@centos ~]# top

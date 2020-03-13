@@ -11,7 +11,7 @@ categories: 后端开发
 
 #### 2、keystore配置
 
-CAS服务端默认使用HTTPS，需要配置证书文件。template项目提供了生成秘钥的脚本，直接在项目目录执行
+CAS服务端默认使用HTTPS，需要配置证书文件。template项目提供的脚本拥有生成证书的命令，直接执行：
 
 ```bash
 build gencert
