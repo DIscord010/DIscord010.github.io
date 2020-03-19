@@ -16,7 +16,7 @@ categories: 后端开发
 </student>
 ```
 
-决定选择使用JAXB对XML报文进行反序列化。上诉报文对应的实体类如下：
+选择使用JAXB对XML报文进行反序列化。上诉报文对应的实体类如下：
 
 ```java
 @XmlRootElement(name = "student")

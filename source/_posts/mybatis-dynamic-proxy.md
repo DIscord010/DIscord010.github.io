@@ -89,12 +89,10 @@ hello world
 
 ```java
   private MapperMethod cachedMapperMethod(Method method) {
-    // 缓存中不存在则 new
+    // 缓存中不存在则创建
     return methodCache.computeIfAbsent(method, k -> new MapperMethod(mapperInterface, method, sqlSession.getConfiguration()));
   }
 ```
-
-如果`methodCache`中不存在方法对应的`MapperMethod`实例则`new`一个，并放入缓存。
 
 然后执行类`MapperMethod`的`execute()`方法中：
 

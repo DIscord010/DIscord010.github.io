@@ -37,7 +37,7 @@ categories: 后端开发
 
 # Bean注册分析
 
-而在Spring的配置文件中，我们只注册了两个bean：
+而在Spring的配置文件中，我们只注册两个Mybaits相关的bean：
 
 ```xml
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
@@ -58,7 +58,7 @@ public class MapperScannerConfigurer
     implements BeanDefinitionRegistryPostProcessor, InitializingBean, ApplicationContextAware, BeanNameAware {
 ```
 
-我们可以发现其实现`BeanDefinitionRegistryPostProcessor`接口（Spring在实例化bean时，会判断是否继承此接口，是则调用`postProcessBeanDefinitionRegistry()`方法）：
+可以发现其实现`BeanDefinitionRegistryPostProcessor`接口（Spring预留的扩展接口，三方可以借此来完成自定义的`BeanDefinition`的注册）：
 
 ```java
   @Override
@@ -88,7 +88,7 @@ public class MapperScannerConfigurer
   }
 ```
 
-我们可以发现`ClassPathMapperScanner`继承类`ClassPathBeanDefinitionScanner`并使用`super.doScan(basePackages)`调用类`ClassPathBeanDefinitionScanner`的`doScan()`方法：
+可以发现`ClassPathMapperScanner`继承类`ClassPathBeanDefinitionScanner`并使用`super.doScan(basePackages)`调用类`ClassPathBeanDefinitionScanner`的`doScan()`方法：
 
 ```java
   @Override
@@ -145,7 +145,7 @@ public class MapperScannerConfigurer
 	}
 ```
 
-也就说这个方法会扫描指定的包路径，生成`beanDefinition`对象并注册在`beanDefinitionMap`中。并将这些各属性为默认值的`beanDefinition`进行返回，由调用方进行`beanDefinition`的各项属性重新赋值：
+也就说这个方法会扫描指定的包路径，生成`beanDefinition`对象并注册在`beanDefinitionMap`中，并将这些各属性为`ClassPathBeanDefinitionScanner`赋予的`beanDefinition`进行返回。mybatis-spring借助`ClassPathBeanDefinitionScanner`类进行路径的扫描和`beanDefinition`的生成，并在后续中进行`beanDefinition`的各项属性重新赋值：
 
 ![](image-20200219145130306.png)
 
