@@ -667,6 +667,7 @@ spring.datasource.password=root
 
 # 总结
 
-这篇博客只是简单的介绍了几种数据库读写分离的方式。
+这篇博客只是简单的介绍几种数据库读写分离的方式。
 
-自行coding的话，无论是集成配置中心，还是实现从库的熔断禁用功能都需要一定的水平。而[ShardingSphere](https://shardingsphere.apache.org/document/current/cn/)拥用编排治理的功能，提供了配置动态化、数据库熔断禁用等功能，但是相应的需要增加对ShardingSphere的运维了解。
+自己编码实现的话，需要完善从库的熔断禁用等功能。而[ShardingSphere](https://shardingsphere.apache.org/document/current/cn/)拥用编排治理的功能，提供了配置动态化、数据库熔断禁用等功能，但是相应的需要增加对ShardingSphere的了解。
+
