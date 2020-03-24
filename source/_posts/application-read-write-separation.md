@@ -659,7 +659,7 @@ spring.datasource.password=root
 [INFO ] 16:20:47.502 [ShardingSphere-Command-8] ShardingSphere-SQL - SQL: SET NAMES utf8 ::: DataSources: ds_master
 ```
 
-## 其他
+## 参考
 
 这里简单使用ShardingSphere实现了对数据库的读写分离。
 
