@@ -8,7 +8,7 @@ categories: 后端开发
 
 限流是服务降级的一种方式。为保证系统的稳定运行，防止突发的流量洪峰把系统打垮，需要对服务进行限流处理。
 
-# guava工具包的`RateLimiter`
+# guava `RateLimiter`
 
 ## 限流注解
 
@@ -89,7 +89,7 @@ public class HelloServiceImpl implements HelloService {
 
 ![](image-20200324140346600.png)
 
-# Redisson的`RRateLimiter`
+# Redisson `RRateLimiter`
 
 如果服务进行集群化，guava工具包提供的`RateLimiter`只能针对单个应用节点的服务进行限制，无法统一对整个集群进行流量限制。使用Redisson实现的`RRateLimiter`来完成分布式限流：
 
@@ -134,7 +134,7 @@ public class LimiterAspect {
 
 目前官方没有提供覆盖限流配置的方法，官方的建议是删除该对象后进行重建：
 
-> you can either delete or set expiration on object.
+> You can delete it and then set config again.
 
 ```java
 @Component

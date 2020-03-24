@@ -5,11 +5,11 @@ tags: [单点登录]
 categories: 后端开发
 ---
 
-#### 1、template下载
+### template下载
 
 地址： https://github.com/apereo/cas-overlay-template/tree/5.3 
 
-#### 2、keystore配置
+### keystore配置
 
 CAS服务端默认使用HTTPS，需要配置证书文件。template项目提供的脚本拥有生成证书的命令，直接执行：
 
@@ -19,7 +19,7 @@ build gencert
 
 即会生成证书文件，默认路径为当前盘符目录下的`\etc\cas`中。
 
-#### 3、HTTP支持（客户端使用HTTP协议）
+### HTTP支持（客户端使用HTTP协议）
 
 修改application.properties配置文件（cas-overlay-template-5.3\src\main\resources），增加：
 
@@ -43,7 +43,7 @@ cas.serviceRegistry.initFromJson=true
 
 第三行与默认配置相比增加了http协议的支持。
 
-#### 4、项目运行
+### 项目运行
 
 ```bash
 build run
