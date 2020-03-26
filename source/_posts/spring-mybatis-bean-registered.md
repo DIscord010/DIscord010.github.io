@@ -73,8 +73,7 @@ public class MapperScannerConfigurer
 			List<BeanDefinitionRegistryPostProcessor> registryProcessors = new ArrayList<>();
 
 			for (BeanFactoryPostProcessor postProcessor : beanFactoryPostProcessors) {
-				// 实现 BeanDefinitionRegistryPostProcessor接口则调用 postProcessBeanDefinitionRegistry方法
-                if (postProcessor instanceof BeanDefinitionRegistryPostProcessor) {
+				if (postProcessor instanceof BeanDefinitionRegistryPostProcessor) {
 					BeanDefinitionRegistryPostProcessor registryProcessor =
 							(BeanDefinitionRegistryPostProcessor) postProcessor;
 					registryProcessor.postProcessBeanDefinitionRegistry(registry);

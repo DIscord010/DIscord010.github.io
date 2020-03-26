@@ -148,5 +148,5 @@ public class RedTeaProvider extends BaseTeaProvider {
 
 # 参考
 
-《设计模式之禅（第2版）》
+《设计模式之禅(第2版)》
 
