@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Allow: /archives/
+Disallow: /baidu_verify_socduZ3ZY7.html
+Disallow: /google7e43d29cd36e3bbb.html
+Disallow: /CNAME
+Disallow: /content.json
+Disallow: /404.html
+Disallow: /tags/
+Disallow: /categories/
